@@ -4,6 +4,6 @@ import 'package:new_project/signup.dart';
 import 'package:new_project/welcome.dart';
 
 void main() {
-  runApp(MaterialApp(home: Login(),));
+  runApp(MaterialApp(home: Signup(),));
 }
 

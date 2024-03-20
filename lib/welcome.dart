@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:new_project/Login.dart';
 class Welcome extends StatefulWidget {
   const Welcome({super.key});
 
@@ -22,7 +23,7 @@ class _WelcomeState extends State<Welcome> {
             Image.network('image/flutter.png',height: 200),
             SizedBox(height: 50,),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context) =>  Login(),));},
               // style: ElevatedButton.styleFrom(
               //   primary: Colors.blue,
               // ),

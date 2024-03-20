@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:new_project/welcome.dart';
 
 class Signup extends StatefulWidget {
   const Signup({super.key});
@@ -16,7 +17,7 @@ class _SignupState extends State<Signup> {
         padding: const EdgeInsets.all(8.0),
         child: Center(
           child: Padding(
-            padding: const EdgeInsets.all(45.0),
+            padding: const EdgeInsets.all(60.0),
             child: Column(
               children: [
                 SizedBox(
@@ -73,7 +74,7 @@ class _SignupState extends State<Signup> {
                         border: OutlineInputBorder())),
                 SizedBox(height: 25),
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context) =>  Welcome(),));},
                   style: ElevatedButton.styleFrom(
                     primary: Colors.blue,
                   ),
